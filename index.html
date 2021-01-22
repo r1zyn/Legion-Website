@@ -8,10 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="DC.title" content="Legion - Redefining Discord">
-    <meta name="description"
-        content="Meet Legion, the ultimate Discord server management and multi-purpose utility bot by Archreus#4200 and the Midnight Development team. Our objective is to enhance server management for server owners, administrators and moderators, as well as create a safe and interactive user-friendly environment for your server. With it's powerful unique in-built features, Legion can guarantee that it's the best choice for you.">
-    <meta name="keywords"
-        content="legion,discord,bot,server,management,levels,fun,moderation,api,discord.js,information,util,utilities,discord bot,archreus,lucaslah,midnight,development,midight development,crown,tech,crown tech,mystic">
+    <meta name="description" content="Meet Legion, the ultimate Discord server management and multi-purpose utility bot by Archreus#4200 and the Midnight Development team. Our objective is to enhance server management for server owners, administrators and moderators, as well as create a safe and interactive user-friendly environment for your server. With it's powerful unique in-built features, Legion can guarantee that it's the best choice for you.">
+    <meta name="keywords" content="legion,discord,bot,server,management,levels,fun,moderation,api,discord.js,information,util,utilities,discord bot,archreus,lucaslah,midnight,development,midight development,crown,tech,crown tech,mystic">
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="index, follow">
 
@@ -55,35 +53,106 @@
 
 
 <body onload="showFunction()">
-    <header>
-        <nav class="header-nav" id="header-nav" style="display:none;">
-            <a href="index.html"><img src="assets/img/favicon/favicon-160x160.png" height="40" width="40"
-                    class="header-nav-logo" /></a>
-            <a href="index.html" class="header-nav-title">
-                <p class="header-nav-title"><strong>Legion</strong></p>
-            </a>
-            <ul>
-                <li class="active"><a href="index.html" class="nav-item-active"><strong>Home</strong></a></li>
-                <li><a href="index.html" class="nav-item"><strong>About Us</strong></a></li>
-                <li><a href="index.html" class="nav-item"><strong>Commands</strong></a></li>
-                <li><a href="index.html" class="nav-item"><strong>FAQ</strong></a></li>
-                <li><a href="index.html" class="nav-item"><strong>Contact Us</strong></a></li>
-            </ul>
 
-            <a href="https://discord.com/oauth2/authorize?client_id=794411847117832202&permissions=8&scope=bot"
-                target="blank" class="nav-invite-btn-url">
-                <button class="nav-invite-btn"><strong>Invite</strong></button>
-            </a>
-        </nav>
-    </header>
+    <div class="navbar" id="navbar">
+        <div class="navsidebar">
 
-    <div class="title-container">
-        <img class="head-title-img"
-            src="https://ancestron.weebly.com/uploads/1/2/7/7/127703923/untitled-design-62-orig-removebg_orig.png"
-            style="display:none;" id="head-title-img" />
-        <p class="head-title-description" id="head-title-description" style="display:none;"><strong>Server management?
-                We've got your back.</strong></p>
+            <div class="navsidebarbutton" id="navsidebarbutton" onclick="navbardivactivate()">
+
+                <div class="bar1" id="bar1"></div>
+                <div class="bar2" id="bar2"></div>
+                <div class="bar3" id="bar3"></div>
+
+            </div>
+            <div class="navsidebarcontent" id="navsidebarcontent">
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Commands</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+
+            </div>
+        </div>
+
+        <a class="navbartitle" href="#">
+            <img class="navbartitleicon" src="assets/img/favicon/favicon-160x160.png" />
+            <h1 class="navbartitlechild">Legion</h1>
+        </a>
+
+        <div class="navtopbar">
+            <div class="navtopbarlinks">
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Commands</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+
+                <a class="navtopbarinvite" href="https://discord.com/oauth2/authorize?client_id=794411847117832202&permissions=8&scope=bot">Invite</a>
+
+            </div>
+
+        </div>
     </div>
+
+    <div class="landingparent">
+        <div class="landingchild landingchildleft">
+
+            <div class="landingheader">
+                <img class="landingicon" src="assets/img/favicon/favicon-160x160.png" />
+                <h1 class="landingheadertext">Legion</h1>
+            </div>
+
+            <p class="landingcontent">Legion provides advanced and customizable management and moderation for your discord server.</p>
+
+            <div class="landingchildcontainerparent">
+                <div class="landingchildcontainerchild">
+
+                    <a class="landingbutton">View Products</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="landingchild landingchildright">
+
+            <img class="landingimage" src="assets/img/landingimage.png" />
+
+        </div>
+    </div>
+    <div class="container1" id="learnmore">
+        <div class="flexparent cardcontainer">
+            <div class="cardparent">
+
+                <i class="fas fa-users fa-4x cardimage"></i>
+
+                <h1 class="cardtitle">Serving 1001 users</h1>
+
+                <p class="cardcontent">Legion servers 1001 users, offering them unique features and powerful tools.</p>
+
+            </div>
+            <div class="cardparent">
+
+                <i class="fas fa-terminal fa-4x cardimage"></i>
+
+                <h1 class="cardtitle">43 Unique Commands</h1>
+
+                <p class="cardcontent">Functional and effective commands that allow you to perform tasks easily, quickly, and effectively.</p>
+
+            </div>
+            <div class="cardparent">
+
+                <i class="fas fa-server fa-4x cardimage"></i>
+
+                <h1 class="cardtitle">77 Servers and Growing</h1>
+
+                <p class="cardcontent">77 Servers trust Legion to assist them with moderation and server management.</p>
+
+            </div>
+        </div>
+    </div>
+
 
 
     <!--<a href="https://discord.com/oauth2/authorize?client_id=794411847117832202&permissions=8&scope=bot" target="blank"
@@ -94,38 +163,12 @@
         </button>
     </a>-->
 
-    <span class="scroll-btn" id="scroll-btn" style="display:none;">
-        <a href="#stats-rows">
-            <span class="mouse">
-                <span>
-                </span>
-            </span>
-        </a>
-    </span>
 
-    <div class="stats-row" id="stats-rows">
-        <div class="server-stats" id="server-stats" style="font-size: 0.5rem;display: none;">
-            <i class="fas fa-server fa-7x" id="server-icon-stats"></i>
-            <p class="server-stats-header"><strong>77 Servers</strong></p>
-            <p class="server-stats-description">77 communities having the awesome perks that comes with Legion to their
-                disposal.</p>
-        </div>
-        <div class="user-stats" id="user-stats" style="font-size: 0.5rem;display: none;">
-            <i class="fas fa-users fa-7x" id="user-icon-stats"></i>
-            <p class="user-stats-header"><strong>1001 Users</strong></p>
-            <p class="user-stats-description">We ensure our users are satisfied with our unqiue features and powerful
-                utilities. Meaning 1001 satisfied users.</p>
-        </div>
-        <div class="other-stats" id="other-stats" style="font-size: 0.5rem;display: none;">
-            <i class="fas fa-terminal fa-7x" id="command-icon-stats"></i>
-            <p class="other-stats-header"><strong>43 Commands</strong></p>
-            <p class="other-stats-description">Everyday our development makes sure our commands are functional and are
-                working for you.</p>
-        </div>
-    </div>
+
+
 
     <div class="info-section-one" id="info-section-one" style="display:none;">
-        <p class="info-section-one-title" id="info-section-one-title"><strong>An Unique Modular
+        <p class="info-section-one-title" id="info-section-one-title"><strong>A Unique Modular
                 System</strong></p>
         <p class="info-section-one-description" id="info-section-one-description">
             <strong>What makes Legion unique is it's powerful module core system. Each command is categorized into
@@ -147,28 +190,25 @@
     </svg>
 
 
-    <iframe src="https://discord.com/widget?id=760659394370994197&theme=dark" width="350" height="500"
-        allowtransparency="true" frameborder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-        style="display: none;"></iframe>
+    <iframe src="https://discord.com/widget?id=760659394370994197&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="display: none;"></iframe>
 
     <script>
-        $(document).ready(function () {
-            $("a").on('click', function (event) {
+        $(document).ready(function() {
+            $("a").on('click', function(event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
 
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                    }, 800, function() {
                         window.location.hash = hash;
                     });
                 }
             });
         });
 
-        (function ($) {
+        (function($) {
             /**
              * Copyright 2012, Digital Fusion
              * Licensed under the MIT license.
@@ -179,7 +219,7 @@
              *     the user visible viewport of a web browser.
              *     only accounts for vertical position, not horizontal.
              */
-            $.fn.visible = function (partial) {
+            $.fn.visible = function(partial) {
 
                 var $t = $(this),
                     $w = $(window),
@@ -194,8 +234,8 @@
             };
         })(jQuery);
 
-        $(window).scroll(function (event) {
-            $(".module").each(function (i, el) {
+        $(window).scroll(function(event) {
+            $(".module").each(function(i, el) {
                 var el = $(el);
                 if (el.visible(true)) {
                     el.addClass("come-in");
@@ -206,16 +246,16 @@
         var win = $(window);
         var allMods = $(".module");
 
-        allMods.each(function (i, el) {
+        allMods.each(function(i, el) {
             var el = $(el);
             if (el.visible(true)) {
                 el.addClass("already-visible");
             }
         });
 
-        win.scroll(function (event) {
+        win.scroll(function(event) {
 
-            allMods.each(function (i, el) {
+            allMods.each(function(i, el) {
                 var el = $(el);
                 if (el.visible(true)) {
                     el.addClass("come-in");
@@ -244,15 +284,15 @@
             el.style.transform = string;
         }
 
-        el.addEventListener('mouseout', function () {
+        el.addEventListener('mouseout', function() {
             el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
         })
 
-        el.addEventListener('mousedown', function () {
+        el.addEventListener('mousedown', function() {
             el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)';
         })
 
-        el.addEventListener('mouseup', function () {
+        el.addEventListener('mouseup', function() {
             el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)';
         })
     </script>
