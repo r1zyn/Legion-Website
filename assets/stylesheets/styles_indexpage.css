@@ -668,6 +668,7 @@ body {
     transition: all 0.3s;
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
 }
 
 .landingbutton:hover {
