@@ -7,6 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -122,6 +123,11 @@ nav {
     overflow: hidden;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
 li {
     display: inline;
 }
@@ -172,10 +178,10 @@ hr {
 
 .nav-invite-btn {
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color:white;
+    color:#7289da;
     text-decoration: none;
     border-color: #7289da;
-    background-color: #7289da;
+    background-color: transparent;
     width: 150px;
     height: 40px;
     display: -webkit-box;
@@ -211,8 +217,8 @@ hr {
 .nav-invite-btn:hover {
     border: solid;
     border-color: #7289da;
-    background-color: transparent;
-    color: #7289da;
+    background-color: #7289da;
+    color: white;
 }
 
 
@@ -405,7 +411,7 @@ body {
 	left: 0;
 	right: 0;
     text-align: center;
-    top: 100px;
+    top: 20px;
 }
 
 .scroll-btn>* {
@@ -478,6 +484,145 @@ body {
 @keyframes animatebottom { 
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
+}
+
+.server-stats {
+    background-color: #2f3136;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 100px;
+    top: 105px;
+}
+
+#server-icon-stats {
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+#user-icon-stats {
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin-left: 110px;
+    padding-top: 30px;
+}
+
+#command-icon-stats {
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin-left: 110px;
+    padding-top: 30px;
+}
+
+.server-stats-header {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 75px;
+    top: -140px;
+}
+
+.server-stats-description {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 45px;
+    top: -140px;
+    text-align: center;
+    width: 200px;
+}
+
+.user-stats {
+    background-color: #2f3136;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 500px;
+    top: -215px;
+}
+
+#server-icon-stats {
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin-left: 120px;
+    padding-top: 30px;
+}
+
+.user-stats-header {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 80px;
+    top: -140px;
+}
+
+.user-stats-description {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+    top: -140px;
+    text-align: center;
+    width: 240px;
+}
+
+.other-stats {
+    background-color: #2f3136;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 900px;
+    top: -535px;
+}
+
+#server-icon-stats {
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin-left: 120px;
+    padding-top: 30px;
+}
+
+.other-stats-header {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 50px;
+    top: -140px;
+}
+
+.other-stats-description {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 45px;
+    top: -140px;
+    text-align: center;
+    width: 200px;
 }
 
 .info-section-one-title {
