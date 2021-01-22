@@ -1,10 +1,25 @@
 /* Font Imports */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons-outlined {
+    margin-right: 5px;
+    font-size: inherit !important;
+}
+
 body {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -123,7 +138,7 @@ body {
 * {
     --primary: #7289da;
     --secondary: rgb(255, 255, 255);
-    --tertiary: #f2f7fa;
+    --tertiary: #f4f8fa;
     --tertiaryshade: rgb(255, 255, 255);
     --nav: #f1f1f1;
 }
@@ -664,11 +679,14 @@ body {
     border-radius: 30px;
     border: var(--primary) solid 2px;
     color: var(--primary);
-    padding: 10px 30px;
+    padding: 12px 35px;
     transition: all 0.3s;
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    line-height: 100%;
 }
 
 .landingbutton:hover {
@@ -733,6 +751,23 @@ body {
     margin: auto;
     text-align: center;
     line-height: 25px;
+}
+
+.featuredcontainer {
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredparent {
+    width: 30%;
+}
+
+.featuredimage {
+    width: 90%;
+    margin: 0 20%;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 8px 18px 0;
 }
 
 .sticky {
