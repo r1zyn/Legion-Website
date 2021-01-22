@@ -269,6 +269,12 @@ body {
     animation: navbarload 0.5s;
     padding: 0 3.5%;
     z-index: 1000;
+    transition: all 0.3s;
+}
+
+.navbar:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 4px 12px 2px;
+    background: var(--nav);
 }
 
 .navbartitle {
