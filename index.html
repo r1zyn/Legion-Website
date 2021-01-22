@@ -36,6 +36,7 @@
 
     <script src="assets/scripts/b3dml320f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/101fd1b1be.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
         new Crate({
             server: '760659394370994197',
@@ -77,11 +78,11 @@
     </header>
 
     <div class="title-container">
-        <a href="index.html"><img class="head-title-img"
-                src="https://ancestron.weebly.com/uploads/1/2/7/7/127703923/untitled-design-62-orig-removebg_orig.png"
-                style="display:none;" id="head-title-img" />
-        </a>
-        <p class="head-title-description"><strong>Server management? We've got your back.</strong></p>
+        <img class="head-title-img"
+            src="https://ancestron.weebly.com/uploads/1/2/7/7/127703923/untitled-design-62-orig-removebg_orig.png"
+            style="display:none;" id="head-title-img" />
+        <p class="head-title-description" id="head-title-description" style="display:none;"><strong>Server management?
+                We've got your back.</strong></p>
     </div>
 
 
@@ -94,13 +95,34 @@
     </a>-->
 
     <span class="scroll-btn" id="scroll-btn" style="display:none;">
-        <a href="#info-section-one">
+        <a href="#stats-rows">
             <span class="mouse">
                 <span>
                 </span>
             </span>
         </a>
     </span>
+
+    <div class="stats-row" id="stats-rows">
+        <div class="server-stats" id="server-stats" style="font-size: 0.5rem;display: none;">
+            <i class="fas fa-server fa-7x" id="server-icon-stats"></i>
+            <p class="server-stats-header"><strong>77 Servers</strong></p>
+            <p class="server-stats-description">77 communities having the awesome perks that comes with Legion to their
+                disposal.</p>
+        </div>
+        <div class="user-stats" id="user-stats" style="font-size: 0.5rem;display: none;">
+            <i class="fas fa-users fa-7x" id="user-icon-stats"></i>
+            <p class="user-stats-header"><strong>1001 Users</strong></p>
+            <p class="user-stats-description">We ensure our users are satisfied with our unqiue features and powerful
+                utilities. Meaning 1001 satisfied users.</p>
+        </div>
+        <div class="other-stats" id="other-stats" style="font-size: 0.5rem;display: none;">
+            <i class="fas fa-terminal fa-7x" id="command-icon-stats"></i>
+            <p class="other-stats-header"><strong>43 Commands</strong></p>
+            <p class="other-stats-description">Everyday our development makes sure our commands are functional and are
+                working for you.</p>
+        </div>
+    </div>
 
     <div class="info-section-one" id="info-section-one" style="display:none;">
         <p class="info-section-one-title" id="info-section-one-title"><strong>An Unique Modular
@@ -120,7 +142,7 @@
     <p class="info-section-two-description" id="info-section-two-description" style="display:none;">Need a helping hand?
     </p>
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" />
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"></svg>
     <path d="M50 100 L150 100 L180 200 L80 200 Z" />
     </svg>
 
