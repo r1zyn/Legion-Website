@@ -773,6 +773,11 @@ body {
     box-shadow: rgba(0, 0, 0, 0.19) 0 4px 8px 0, rgba(0, 0, 0, 0.15) 0 12px 28px 0;
 }
 
+.landingsplitter {
+    background: var(--tertiary);
+    height: 13vh;
+}
+
 .container1 {
     background: var(--tertiary);
 }
