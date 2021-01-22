@@ -17,7 +17,6 @@ function scrolltop() {
         document.getElementById("navbar").style.boxShadow = "none";
 
         document.getElementById("navbar").style.transition = "all 0.2s";
-
     }
 }
 
