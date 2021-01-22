@@ -188,6 +188,66 @@ body {
     }
 }
 
+@keyframes contentload {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeleft {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        left: 15px;
+    }
+    50% {
+        opacity: 0;
+        pointer-events: none;
+        left: 15px;
+    }
+    100% {
+        opacity: 1;
+        pointer-events: all;
+        left: 0px;
+    }
+}
+
+@keyframes faderight {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        right: 15px;
+    }
+    50% {
+        opacity: 0;
+        pointer-events: none;
+        right: 15px;
+    }
+    100% {
+        opacity: 1;
+        pointer-events: all;
+        right: 0px;
+    }
+}
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        top: 15px;
+    }
+    50% {
+        opacity: 0;
+        pointer-events: none;
+        top: 15px;
+    }
+    100% {
+        opacity: 1;
+        pointer-events: all;
+        top: 0px;
+    }
+}
+
 @keyframes float {
     0% {
         top: 0;
@@ -580,6 +640,10 @@ body {
 
 
 /*Content*/
+
+.content {
+    animation: 1s contentload;
+}
 
 .landingparent {
     padding: 0 7.5%;
