@@ -313,10 +313,9 @@ body {
 }
 
 .navbartitleicon {
-    height: 45px;
-    width: 45px;
-    margin: 2.5px;
-    padding: 2.5px;
+    height: 40px;
+    width: 40px;
+    margin: 7.5px;
     transition: all 0.3s;
     font-size: 45px !important;
 }
@@ -532,11 +531,11 @@ body {
     transition: all 0.3s;
     display: block;
     color: var(--primary);
-    border: 2px solid transparent;
+    border: 4px solid transparent;
 }
 
 .navtopbar a:hover {
-    border-bottom: 2px solid var(--primary);
+    box-shadow: inset var(--primary) 0 -4px;
 }
 
 .navtopbarinvite {
