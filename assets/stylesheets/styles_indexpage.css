@@ -15,11 +15,16 @@
     font-size: inherit !important;
 }
 
+html {
+    background: var(--tertiary);
+}
+
 body {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    background: var(--tertiary);
 }
 
 
@@ -873,6 +878,33 @@ body {
     margin: 0 20%;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.3) 0 8px 18px 0;
+}
+
+.footerparent {
+    background: var(--secondary);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerchild {
+    text-align: center;
+    width: 100%;
+}
+
+.footerheader {
+    margin: auto;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.footerheadericon {
+    width: 40px;
+    height: 40px;
+}
+
+.footerheadertext {
+    font-size: 28px;
 }
 
 .sticky {
